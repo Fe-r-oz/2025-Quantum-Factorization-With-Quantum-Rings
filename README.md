@@ -22,6 +22,7 @@ This repository contains an implementation of **Shor's Algorithm for factoring s
 8. [Performance Analysis](#performance-analysis)
 9. [Key Learnings & Insights](#key-learnings--insights)
 10. [Future Work](#future-work)
+11. [References](#refs)
 
 ---
 
@@ -106,15 +107,8 @@ Shor’s algorithm is a **quantum algorithm for integer factorization** that sig
 
 ---
 
-## ⏱ **7. Performance Analysis** <a name="performance-analysis"></a>
 
-- Execution time is logged for:
-  - Quantum circuit execution
-  - Classical factorization steps
-- Helps in **identifying bottlenecks** and optimizing performance.
-
-
-## 8 **Factorization Results**  <a name="factorization-results"></a>
+## 7 **Factorization Results**  <a name="factorization-results"></a>
 
 | **N (Bit Size)** | **Job Execution Time (s)** | **Qubits Used** | **Estimated Gates** | **Factors** | **Total Time (s)** |
 |-----------------|------------------------|--------------|-----------------|-----------|--------------|
@@ -123,6 +117,15 @@ Shor’s algorithm is a **quantum algorithm for integer factorization** that sig
 | **143 (8-bit)** | 2.86  | 17 | 193 | 11, 13 | 3.29 |
 
 > **Note:** The actual number of gate operations is not available. For more details, contact **Quantum Rings Support**.
+
+## ⏱ **8. Performance Analysis** <a name="performance-analysis"></a>
+
+- Execution time is logged for:
+  - Quantum circuit execution
+  - Classical factorization steps
+- Helps in **identifying bottlenecks** and optimizing performance.
+
+
 
 
 # 8-Bit, N = 143
@@ -139,10 +142,9 @@ Shor’s algorithm is a **quantum algorithm for integer factorization** that sig
 
 
 
-
 ---
 
-## 💡 **7. Key Learnings & Insights** <a name="key-learnings--insights"></a>
+## 💡 **9. Key Learnings & Insights** <a name="key-learnings--insights"></a>
 
 - **Continued fractions are critical** for accurate period estimation.
 - **Modular exponentiation is the main bottleneck** for scaling to larger numbers.
@@ -150,15 +152,28 @@ Shor’s algorithm is a **quantum algorithm for integer factorization** that sig
 
 ---
 
-## 🔮 **8. Future Work** <a name="future-work"></a>
+## 🔮 **10. Future Work** <a name="future-work"></a>
 
 ✅ **Replace the simplified modular exponentiation with a scalable quantum modular multiplication circuit.**  
 ✅ **Extend factorization tests to larger semiprime numbers.**  
 ✅ **Optimize the quantum Fourier transform implementation for improved accuracy.**  
 
----
+## 📚 **11. References & Documentation** <a name="refs"></a>
 
 
+1. 🔗 **11.1 Research & Papers**  
+- **Shor’s Algorithm:** P.W. Shor, *Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer*, SIAM Journal on Computing, 1997. [\[Paper\]](https://arxiv.org/abs/quant-ph/9508027)  
+- **Quantum Fourier Transform (QFT):** M. Nielsen & I. Chuang, *Quantum Computation and Quantum Information*, Cambridge University Press, 2010.  
+- **Modular Exponentiation in Quantum Circuits:** Vedral, Barenco & Ekert, *Quantum Networks for Elementary Arithmetic Operations*, 1996.  
 
+2. 📖 **11.2 Documentation & Libraries**  
+- **QuantumRings Library (Backend for Quantum Simulation)** – [Official Documentation](https://quantumrings.com/docs)  
+- **Qiskit (For Reference in Quantum Programming)** – [Qiskit Documentation](https://qiskit.org/documentation/)  
+- **NumPy (Classical Number Theory Support)** – [NumPy Docs](https://numpy.org/doc/stable/)  
+
+3. 🛠 **11.3 Implementation Guides**  
+- **Building Modular Exponentiation in Quantum Circuits:** [IBM Qiskit Textbook](https://qiskit.org/textbook/ch-algorithms/shor.html)  
+- **Implementing Inverse QFT in Quantum Circuits:** [Qiskit Tutorial](https://qiskit.org/textbook/ch-algorithms/quantum-fourier-transform.html)  
+- **Quantum Phase Estimation in Shor’s Algorithm:** [Qiskit Community Tutorials](https://github.com/qiskit-community/qiskit-community-tutorials)  
 
 ---
